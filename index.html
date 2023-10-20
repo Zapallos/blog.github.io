@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable="no" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="estilos.css">
+        <title>Desarrollo blog</title>
+    </head>
+    <body>
+        <!--SECCION INICIO-->
+        <section id="inicio">
+            <div class="contenido">
+                <header>
+                    <div class="contenido-header">
+                        <h1>/LP/</h1>
+                        <nav id="nav" class="">
+                            <ul id="links">
+                                <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">inicio</a></li>
+                                <li><a href="#sobremi" onclick="seleccionar(this)">sobre mi</a></li>
+                                <li><a href="#servicios"  onclick="seleccionar(this)">servicios</a></li>
+                                <li><a href="#portafolio" onclick="seleccionar(this)">portafolio</a></li>
+                                <li><a href="#contacto"  onclick="seleccionar(this)">contacto</a></li>
+                            </ul>
+                        </nav>
+
+                        <!--Iconos del menu responsivo-->
+                        <div id="icono-nav" onclick="responsiveMenu()">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <!--Iconos de las redes sociales-->
+                        <div class="redes">
+                            <a href="https://www.youtube.com/@dayafterdays.s5529/featured" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook" target="_blank"></i></a>
+                            <a href="https://www.instagram.com/s.a.ch.aa/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-tiktok" target="_blank"></i></a>
+                        </div>
+                    </div>
+                </header>
+                <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>  
+                <h2>Soy <span>Sacha Sepulveda</span>, Analista Programador</h2>
+                <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    A fuga optio omnis nostrum, et aliquam non beatae illo odio cupiditate, voluptatum aperiam,
+                    perspiciatis recusandae harum autem.</p>
+                    <a href="#portafolio">Ir a portafolio</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION SOBRE MI-->
+        <section id="sobremi">
+            <div class="contenedor-foto">
+                <img src="yo.jpg" alt="">
+            </div>
+            <div class="sobremi">
+                <p class="titulo-seccion">Sobre mi</p>
+                <h2>Hola, soy <span>Sacha Sepulveda</span></h2>
+                <h3>Analista Programador</h3>
+                <p>Me gustaria comentar un poco sobre mi mas como persona que mi rubro, para empezar 
+                    me considero una persona amante de los animales en mis tiempos libres leo ya sea para nutrirme o por gusto,
+                    me gusta aprender de las personas considero que cada una tiene ya sea vivencias o conocimiento de los que podemos 
+                    aprender me considero alguien perseverante y que a pesar de que falle o me equivoque significa que estoy a un paso de hacer
+                mejor las cosas</p>
+                    <p> </p>
+                    <a href="#">Descargar CV</a>
+            </div>
+        </section>
+
+        <!-- SECCION SERVICIOS-->
+        <section id="servicios">
+            <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+            <div class="fila">
+                <div class="servicio">
+                    <span class="icono"><i class="fa-regular fa-keyboard"></i></i></span>
+                    <h4>Desarrollo de software </h4>
+                    <hr>
+                    <ul class="servicios-tag">
+                        <li>Web</li>
+                        <li>Graphic</li>
+                        <li>SEO</li>
+                    </ul>
+                    <P> Implica la concepción, diseño, programación, pruebas y mantenimiento de software .</P>
+                </div>
+                <div class="servicio">
+                    <span class="icono"><i class="fa-solid fa-shield-halved"></i></span>
+                    <h4>Mantenimiento y actualización</h4>
+                    <hr>
+                    <ul class="servicios-tag">
+                        <li>Web</li>
+                        <li>Graphic</li>
+                        <li>SEO</li>
+                    </ul>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, blanditiis quis.
+                    Earum, rerum. Delectus inventore vitae hic repellat.</P>
+                </div>
+                <div class="servicio">
+                    <span class="icono"><i class="fa-solid fa-code"></i></span>
+                    <h4>Diseño de sitios web</h4>
+                    <hr>
+                    <ul class="servicios-tag">
+                        <li>Web</li>
+                        <li>Graphic</li>
+                        <li>SEO</li>
+                    </ul>
+                    <P>crear la estructura visual y funcional de un sitio web, implica la  la selección de colores,
+                         tipografías, imágenes y otros elementos visuales.</P>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="servicio">
+                    <span class="icono"><i class="fa-solid fa-code"></i></span>
+                    <h4>Desarrollo de aplicaciones</h4>
+                    <hr>
+                    <ul class="servicios-tag">
+                        <li>Web</li>
+                        <li>Graphic</li>
+                        <li>SEO</li>
+                    </ul>
+                    <P> diseñar, crear y mantener aplicaciones informáticas que se ejecutan en diversos dispositivos.</P>
+                </div>
+                <div class="servicio">
+                    <span class="icono"><i class="fa-solid fa-code"></i></span>
+                    <h4>Automatización de procesos</h4>
+                    <hr>
+                    <ul class="servicios-tag">
+                        <li>Web</li>
+                        <li>Graphic</li>
+                        <li>SEO</li>
+                    </ul>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, blanditiis quis.
+                    Earum, rerum. Delectus inventore vitae hic repellat.</P>
+                </div>
+                <div class="servicio">
+                    <span class="icono"><i class="fa-solid fa-code"></i></span>
+                    <h4>Administración de Bases de Datos</h4>
+                    <hr>
+                    <ul class="servicios-tag">
+                        <li>Web</li>
+                        <li>Graphic</li>
+                        <li>SEO</li>
+                    </ul>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, blanditiis quis.
+                    Earum, rerum. Delectus inventore vitae hic repellat.</P>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- SECCION HABILIDADES -->
+        <div class="contenedor-skills" id="skills">
+            <h3>HABILIDADES</h3>
+            <div class="skills">
+                <div class="info">
+                    <p><span class="lista"></span>Html & Css</p>
+                    <span class="porcentaje">80%</span>
+                </div>
+                <div class="barra">
+                    <div id="html" class=""></div>
+                </div>
+            </div>
+
+            <div class="skills">
+                <div class="info">
+                    <p><span class="lista"></span>Javascript</p>
+                    <span class="porcentaje">80%</span>
+                </div>
+                <div class="barra">
+                    <div id="js" class=""></div>
+                </div>
+            </div>
+
+            <div class="skills">
+                <div class="info">
+                    <p><span class="lista"></span>Base de Datos</p>
+                    <span class="porcentaje">70%</span>
+                </div>
+                <div class="barra">
+                    <div id="bd" class=""></div>
+                </div>
+            </div>
+
+            <div class="skills">
+                <div class="info">
+                    <p><span class="lista"></span>Tableau</p>
+                    <span class="porcentaje">70%</span>
+                </div>
+                <div class="barra">
+                    <div id="tb" class=""></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCION PORTAFOLIO -->
+        <section id="portafolio">
+            <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+            <div class="fila">
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="foto_proye.png" alt="">
+                    <div class="info">
+                        <h4>descripcion del Proyeto</h4>
+                        <p>Diseño Web</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="loadingg.jpg" alt="">
+                    <div class="info">
+                        <h4>descripcion del Proyeto</h4>
+                        <p>Diseño Web</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="foto_proye2.png" alt="">
+                    <div class="info">
+                        <h4>descripcion del Proyeto</h4>
+                        <p>Diseño Web</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="loadingg.jpg" alt="">
+                    <div class="info">
+                        <h4>descripcion del Proyeto</h4>
+                        <p>Diseño Web</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="loadingg.jpg" alt="">
+                    <div class="info">
+                        <h4>descripcion del Proyeto</h4>
+                        <p>Diseño Web</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="loadingg.jpg" alt="">
+                    <div class="info">
+                        <h4>descripcion del Proyeto</h4>
+                        <p>Diseño Web</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="loadingg.jpg" alt="">
+                    <div class="info">
+                        <h4>descripcion del Proyeto</h4>
+                        <p>Diseño Web</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="loadingg.jpg" alt="">
+                    <div class="info">
+                        <h4>descripcion del Proyeto</h4>
+                        <p>Diseño Web</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="loadingg.jpg" alt="">
+                    <div class="info">
+                        <h4>descripcion del Proyeto</h4>
+                        <p>Diseño Web</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION CONTACTO -->
+        <section id="contacto">
+            <h3 class="titulo-seccion">Contactanos ahora</h3>
+            <div class="contenedor-form">
+                <form action="">
+                    <div class="fila mitad">
+                        <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                        <input type="text" placeholder="Dirección de Email" class="input-mitad">
+                    </div>
+                    <div class="fila">
+                        <input type="text" placeholder="Tema..." class="input-full">
+                    </div>
+                    <div class="fila">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje ..." class="input-full"></textarea>
+                    </div>
+
+                    <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                </form>
+            </div>
+        </section>
+
+        <!-- SECCION FOOTER -->
+        <footer>
+            <p>Todos los derechos reservados - 2023</p>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
